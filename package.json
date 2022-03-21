@@ -1,7 +1,7 @@
 {
   "name": "curso-cypress-21-03-2022",
   "version": "1.0.0",
-  "description": "- NodeJs\r - Visual Studio Code (u otro IDE)\r - Git (Opcional. Para clonar repositorio)",
+  "description": "Realizacion de la Capacitacion en Cypress",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
