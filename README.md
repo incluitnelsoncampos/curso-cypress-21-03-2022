@@ -9,7 +9,7 @@
 ## Como clonar el repositorio
 Para poder clonar el repositorio, se necesita tener instalado git en nuestro equipo.
 Si ya tenemos instalado git, usamos el comando:
->   git clone 
+>   git clone https://github.com/incluitnelsoncampos/curso-cypress-21-03-2022.git
 
 ## Instalar dependencias del proyecto
 Una vez descargado el proyecto, se necesita descargar las dependencias aclaradas en el archivo cypress.json, eso lo hacemos mediante el comando:
