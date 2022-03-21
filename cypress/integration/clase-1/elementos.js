@@ -1,41 +1,41 @@
 /// <reference types="cypress" />
 
-describe("Suite TC para elementos", function () {
-  it("Nuestra primera navegacion", () => {
-    //cy.visit('url') --> Nos permite navegar hasta la pagina 'url'
-    cy.visit("http://the-internet.herokuapp.com/dropdown");
-  });
+describe('TestSuite para Utilizar elementos', () => {
+    it('Dropdown', () => {
+        //cy.visit('url') --> Para visitar la pagina indica en 'url'
+        cy.visit('http://the-internet.herokuapp.com/dropdown')
 
-  it("Seleccionando de la lista el texto Option 1", () => {
-    //1- Ingresar a la pagina
-    cy.visit("http://the-internet.herokuapp.com/dropdown");
+        //select('valor') --> Para seleccionar el valor de una lista
+        cy.get('#dropdown').select('2')
 
-    //2- Obtener elemento y seleccionar el valor Option 1
-    //cy.get('selector') --> Obtener el elemento de la pagina
-    //select('valor') --> Permite seleccionar un valor de la lista
-    cy.get("#dropdown").select("Option 1");
-  });
+        //cy.wait(tiempo_miliseg) --> para frentar la ejecucion en miliseg
+        cy.wait(10000)
 
-  it("Seleccionando de la lista el valor 2", () => {
-    //1- Ingresar a la pagina
-    cy.visit("http://the-internet.herokuapp.com/dropdown");
+        cy.get('#dropdown').select('Option 1')
 
-    //2- Obtener elemento y seleccionar el valor 2
-    //cy.get('selector') --> Obtener el elemento de la pagina
-    //select('valor') --> Permite seleccionar un valor de la lista
-    cy.get("#dropdown").select("2");
-  });
+    })
 
 
-  it.only("Escribiendo en un textbox y click en botones", () => {
-    //1- Ingresar a la pagina
-    cy.visit("http://the-internet.herokuapp.com/login");
+    it('Textbox and Button and Label', () => {
+        cy.visit('http://the-internet.herokuapp.com/login')
 
-    cy.get('#username').type('tomsmith')
-    cy.get('#password').type('SuperSecretPassword!')
+        //type('texto') --> Para escribir en un caja de texto
+        cy.get('#username').type('tomsmith')
+        cy.get('#password').type('SuperSecretPassword!')
 
-    cy.get('.radius').click()
+        //click() --> Para realizar un click sobre el boton
+        cy.get('.radius').click()
 
-    cy.get('#flash').should('contain.text', 'You logged into a secure area!')
-  });
-});
+        //should() --> Para realizar validaciones
+        cy.get('#flash').should('be.visible').should('contain.text', 'You logged into a secure area!')
+
+        cy.get('.subheader').should('contain.text', 'Welcome to the Secure Area. When you are done click logout below.')
+
+        cy.get('.button').should('be.visible').click()
+
+        cy.get('.radius').should('be.visible')
+
+        cy.get('#flash > a').click({force:true})
+    })
+
+})
