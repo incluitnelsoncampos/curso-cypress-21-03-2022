@@ -1,0 +1,23 @@
+{
+  "name": "curso-cypress-21-03-2022",
+  "version": "1.0.0",
+  "description": "- NodeJs\r - Visual Studio Code (u otro IDE)\r - Git (Opcional. Para clonar repositorio)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/incluitnelsoncampos/curso-cypress-21-03-2022.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/incluitnelsoncampos/curso-cypress-21-03-2022/issues"
+  },
+  "homepage": "https://github.com/incluitnelsoncampos/curso-cypress-21-03-2022#readme",
+  "devDependencies": {
+    "cypress": "^9.5.2"
+  }
+}
