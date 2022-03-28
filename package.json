@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/incluitnelsoncampos/curso-cypress-21-03-2022#readme",
   "devDependencies": {
-    "cypress": "^9.5.2"
+    "cypress": "^9.5.2",
+    "cypress-xpath": "^1.6.2"
   }
 }
