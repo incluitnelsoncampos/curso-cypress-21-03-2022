@@ -2,7 +2,6 @@
 require('cypress-xpath')
 
 describe('TestSuite de Facebook', () => {
-
     it('Registrar usuario nuevo', () => {
         cy.visit('www.facebook.com')
 
@@ -10,6 +9,8 @@ describe('TestSuite de Facebook', () => {
 
         //cy.wait(5000)
 
+        //No sirven, ya que los ID (#) son dinamicos
+        //por lo tanto, cada vez al abrir el formulario, cambian
         //cy.get('#u_2_b_uL').type('Nelson')
         //cy.get('#u_a_d_Yd').type('Campos')
 
@@ -32,7 +33,5 @@ describe('TestSuite de Facebook', () => {
         cy.xpath('//button[@name="websubmit"]').should('not.be.enabled')
 
         cy.xpath('//button[@name="websubmit"]').click()
-
-        
     })
 })
