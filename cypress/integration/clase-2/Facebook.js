@@ -30,7 +30,7 @@ describe('TestSuite de Facebook', () => {
         cy.get(':nth-child(2) > ._58mt').click()
 
 
-        cy.xpath('//button[@name="websubmit"]').should('not.be.enabled')
+        cy.xpath('//button[@name="websubmit"]').should('be.enabled')
 
         cy.xpath('//button[@name="websubmit"]').click()
     })
