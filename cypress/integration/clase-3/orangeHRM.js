@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
-import loginPage from '../../support/pageobject/loginPage'
-import dashboardPage from '../../support/pageobject/dashboardPage'
+import loginPage from '../../support/pageobject/orangeHRM/loginPage'
+import dashboardPage from '../../support/pageobject/orangeHRM/dashboardPage'
 
 describe('SuiteTest para Orange HRM', function() {
     
@@ -43,7 +43,7 @@ describe('SuiteTest para Orange HRM', function() {
     })
 
     it.only('Lista de datos', () => {
-        lista = require('../../fixtures/listData.json')
+        const lista = require('../../fixtures/listData.json')
 
         lista.forEach(objecto => {
             cy.log(objecto)
