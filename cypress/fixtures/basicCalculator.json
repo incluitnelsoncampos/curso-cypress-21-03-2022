@@ -1,0 +1,32 @@
+[
+    {
+        "number_one": "1",
+        "number_two": "1",
+        "operation": "Add",
+        "result": "2"
+    },
+    {
+        "number_one": "10",
+        "number_two": "2",
+        "operation": "Subtract",
+        "result": "8"
+    },
+    {
+        "number_one": "5",
+        "number_two": "5",
+        "operation": "Multiply",
+        "result": "25"
+    },
+    {
+        "number_one": "1",
+        "number_two": "1",
+        "operation": "Divide",
+        "result": "1"
+    },
+    {
+        "number_one": "2",
+        "number_two": "4",
+        "operation": "Concatenate",
+        "result": "24"
+    }
+]
