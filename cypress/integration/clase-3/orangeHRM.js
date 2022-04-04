@@ -43,10 +43,13 @@ describe('SuiteTest para Orange HRM', function() {
     })
 
     it.only('Lista de datos', () => {
+        //Creamos una variable con la lista de objetos
         const lista = require('../../fixtures/listData.json')
 
-        lista.forEach(objecto => {
-            cy.log(objecto)
+        //Con la lista, llamamos al forEach y recorremos cada uno de los elementos
+        //Para hacer referencia a los elementos, ponemos como nombre de variable objeto
+        lista.forEach(objeto => {
+            cy.log(objeto)
         });
     })
 })
