@@ -19,6 +19,11 @@
   "homepage": "https://github.com/incluitnelsoncampos/curso-cypress-21-03-2022#readme",
   "devDependencies": {
     "cypress": "^9.5.2",
+    "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-xpath": "^1.6.2"
-  }
+  },
+
+  "cypress-cucumber-preprocessor": {
+      "nonGlobalStepDefinitions": true
+    }    
 }
