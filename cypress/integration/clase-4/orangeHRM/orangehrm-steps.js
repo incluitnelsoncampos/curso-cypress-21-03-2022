@@ -20,3 +20,26 @@ When('ingreso las credenciales validas y presiono el boton Login', () => {
 Then('visualizo el nombre correcto', () => {
     cy.get('#welcome').should('contain.text', 'Welcome Paul')
 })
+
+When('ingreso el nombre de usuario {string}', (user_name) => {
+    loginPage.type_username(user_name)
+})
+
+When('ingreso el password del usuario {string}', (user_password) => {
+    loginPage.type_password(user_password)
+})
+
+When('hago click en el boton Login', () => {
+    loginPage.click_login()
+})
+
+Then('visualizo el mensaje de bienvenida {string}', (user) => {
+    cy.get('#welcome').should('contain.text', user)
+})
+
+
+When ('ingreso el password del usuario desde una variable de entorno', () => {
+    var user_password = Cypress.env('PASSWORD');
+
+    loginPage.type_password(user_password)
+})
