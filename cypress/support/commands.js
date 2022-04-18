@@ -37,3 +37,34 @@ Cypress.Commands.add('registro', (request_body) => {
         cy.wrap(res)
     })
 })
+
+Cypress.Commands.add('login', (request_body) => {
+    
+    cy.request({
+        method: "POST",
+        url: "http://restapi.adequateshop.com/api/authaccount/login",
+        body: request_body
+        //,failOnStatusCode: false 
+    }).then((res) => {
+        //cy.log(JSON.stringify(res.body))
+
+        cy.wrap(res)
+    })
+})
+
+Cypress.Commands.add('consulta', (token) => {
+    
+    cy.request({
+        method: "GET",
+        headers:
+        {
+            "Authorization": 'Bearer ' + token,
+        },
+        url: "http://restapi.adequateshop.com/api/users?page=1",
+        //,failOnStatusCode: false 
+    }).then((res) => {
+        //cy.log(JSON.stringify(res.body))
+
+        cy.wrap(res)
+    })
+})

@@ -4,6 +4,11 @@ import { Given, When, Then } from "cypress-cucumber-preprocessor/steps"
 let request_registro = require('../../../support/contratos/registro_body.json');
 let response_registro;
 
+let request_login = require('../../../support/contratos/login_body.json');
+let response_login;
+let token;
+let response_consulta;
+
 let response;
 
 Given ("el registro del usuario {string} {string} {string}", (user_name, user_email, user_password) => {
@@ -46,4 +51,36 @@ Then ('el campo code es {string}', (code) => {
     //cy.log(JSON.stringify(response_registro))
     
     expect(response_registro.body.code).to.be.eq(parseInt(code))
+})
+
+
+
+
+
+Given ('el usuario {string} {string}', (user_mail, user_password) => {
+    request_login.email = user_mail
+    request_login.password = user_password
+})
+
+
+When ('nos logueamos en el sistema', () => {
+    cy.login(request_login).then((response_x) => {
+        response_login = response_x
+    })
+})
+Then ('obtengo el token', () => {
+    cy.log(JSON.stringify(response_login.body))
+
+    token = response_login.body.data.Token
+})
+
+When ('consulto por todos los usuarios', () => {
+    cy.consulta(token).then((respuesta) => {
+        cy.log(JSON.stringify(respuesta.body))
+
+        response_consulta = respuesta
+    })
+})
+Then ('obtengo un listado de usuarios', () => {
+    expect(response_consulta.body.data).lengthOf(10)
 })
