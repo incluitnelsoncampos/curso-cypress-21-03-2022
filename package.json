@@ -4,7 +4,14 @@
   "description": "Realizacion de la Capacitacion en Cypress",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "smoke:open": "cypress open -e TAGS=\"@Smoke\" --browser=chrome",
+    "qa": "",
+    "dev": "",
+    "prod": "",
+    "test": "npm run cy:open",
+    "report": "node cucumber-html-report.js"
   },
   "repository": {
     "type": "git",
@@ -19,11 +26,18 @@
   "homepage": "https://github.com/incluitnelsoncampos/curso-cypress-21-03-2022#readme",
   "devDependencies": {
     "cypress": "^9.5.2",
+    "cypress-cucumber-attach-screenshots-to-failed-steps": "^1.0.0",
     "cypress-cucumber-preprocessor": "^4.3.1",
-    "cypress-xpath": "^1.6.2"
+    "cypress-xpath": "^1.6.2",
+    "multiple-cucumber-html-reporter": "^1.20.0"
   },
-
   "cypress-cucumber-preprocessor": {
-      "nonGlobalStepDefinitions": true
-    }    
+    "nonGlobalStepDefinitions": true,
+    "cucumberJson": {
+          "generate": true,
+          "outputFolder": "cypress/cucumber-json",
+          "filePrefix": "",
+          "fileSuffix": ".cucumber"
+    }  
+  }
 }

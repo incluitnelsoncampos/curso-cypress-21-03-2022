@@ -23,3 +23,17 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('registro', (request_body) => {
+    
+    cy.request({
+        method: "POST",
+        url: "http://restapi.adequateshop.com/api/authaccount/registration",
+        body: request_body
+        //,failOnStatusCode: false 
+    }).then((res) => {
+        //cy.log(JSON.stringify(res.body))
+
+        cy.wrap(res)
+    })
+})
