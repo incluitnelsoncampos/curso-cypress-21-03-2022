@@ -1,0 +1,142 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "TestSuite para API's",
+    "line": 1,
+    "id": "testsuite-para-api's",
+    "tags": [],
+    "uri": "api.feature",
+    "elements": [
+      {
+        "id": "testsuite-para-api's;registro-de-usuario",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Registro de usuario",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "el registro del usuario \"test_nelson\" \"test.nelson@ggmail.com\" \"123456\"",
+            "result": {
+              "status": "passed",
+              "duration": 543000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "el status code es \"200\"",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "testsuite-para-api's;registro-de-usuario---comando-personalizado",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Registro de usuario - Comando Personalizado",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "el nuevo registro \"test_nelson\" \"test.nelson@ggmail.com\" \"123456\"",
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "realizo el llamado al registo de un nuevo usuario",
+            "result": {
+              "status": "passed",
+              "duration": 490000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "el campo code es \"1\"",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "testsuite-para-api's;obtener-todos-los-usuarios",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Obtener todos los usuarios",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "el usuario \"test.nelson@ggmail.com\" \"123456\"",
+            "result": {
+              "status": "passed",
+              "duration": 21000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "nos logueamos en el sistema",
+            "result": {
+              "status": "passed",
+              "duration": 491000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "obtengo el token",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "consulto por todos los usuarios",
+            "result": {
+              "status": "passed",
+              "duration": 566000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "obtengo un listado de usuarios",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

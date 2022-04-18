@@ -1,0 +1,312 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "TestSuite Basic Calculator",
+    "line": 1,
+    "id": "testsuite-basic-calculator",
+    "tags": [],
+    "uri": "basicCalculator.feature",
+    "elements": [
+      {
+        "id": "testsuite-basic-calculator;operación-de-\"add\"",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Operación de \"Add\"",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "en la pagina principal Basic Calculator",
+            "result": {
+              "status": "passed",
+              "duration": 2725000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "se ingresa los numeros \"1\" y \"1\"",
+            "result": {
+              "status": "passed",
+              "duration": 342000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "se selecciona la operacion \"Add\"",
+            "result": {
+              "status": "passed",
+              "duration": 164000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "presiono en calcular",
+            "result": {
+              "status": "passed",
+              "duration": 111000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "el resultado es \"2\"",
+            "result": {
+              "status": "passed",
+              "duration": 3019000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "testsuite-basic-calculator;operación-de-\"subtract\"",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Operación de \"Subtract\"",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "en la pagina principal Basic Calculator",
+            "result": {
+              "status": "passed",
+              "duration": 682000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "se ingresa los numeros \"10\" y \"2\"",
+            "result": {
+              "status": "passed",
+              "duration": 332000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "se selecciona la operacion \"Subtract\"",
+            "result": {
+              "status": "passed",
+              "duration": 154000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "presiono en calcular",
+            "result": {
+              "status": "passed",
+              "duration": 96000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "el resultado es \"8\"",
+            "result": {
+              "status": "passed",
+              "duration": 3013000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "testsuite-basic-calculator;operación-de-\"multiply\"",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Operación de \"Multiply\"",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "en la pagina principal Basic Calculator",
+            "result": {
+              "status": "passed",
+              "duration": 178000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "se ingresa los numeros \"5\" y \"5\"",
+            "result": {
+              "status": "passed",
+              "duration": 316000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "se selecciona la operacion \"Multiply\"",
+            "result": {
+              "status": "passed",
+              "duration": 154000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "presiono en calcular",
+            "result": {
+              "status": "passed",
+              "duration": 106000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "el resultado es \"25\"",
+            "result": {
+              "status": "passed",
+              "duration": 3013000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "testsuite-basic-calculator;operación-de-\"divide\"",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Operación de \"Divide\"",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "en la pagina principal Basic Calculator",
+            "result": {
+              "status": "passed",
+              "duration": 278000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "se ingresa los numeros \"1\" y \"1\"",
+            "result": {
+              "status": "passed",
+              "duration": 325000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "se selecciona la operacion \"Divide\"",
+            "result": {
+              "status": "passed",
+              "duration": 150000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "presiono en calcular",
+            "result": {
+              "status": "passed",
+              "duration": 103000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "el resultado es \"1\"",
+            "result": {
+              "status": "passed",
+              "duration": 3011000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "testsuite-basic-calculator;operación-de-\"concatenate\"",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Operación de \"Concatenate\"",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "en la pagina principal Basic Calculator",
+            "result": {
+              "status": "passed",
+              "duration": 276000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "se ingresa los numeros \"2\" y \"4\"",
+            "result": {
+              "status": "passed",
+              "duration": 327000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "se selecciona la operacion \"Concatenate\"",
+            "result": {
+              "status": "passed",
+              "duration": 156000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "presiono en calcular",
+            "result": {
+              "status": "passed",
+              "duration": 101000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "el resultado es \"24\"",
+            "result": {
+              "status": "passed",
+              "duration": 3013000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
